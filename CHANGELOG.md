@@ -1,5 +1,47 @@
 # Changelog
 
+## [1.1.0](https://github.com/712163/imapflow/compare/v1.0.164...v1.1.0) (2024-08-04)
+
+
+### Features
+
+* added default SPECIAL-USE when given params to list ([79e59f8](https://github.com/712163/imapflow/commit/79e59f8456d227ce1b587d86b573870aed4a1814))
+
+
+### Bug Fixes
+
+* **address:** do not use '@' instead of empyt address if a field does not contain a value ([aeabbde](https://github.com/712163/imapflow/commit/aeabbded3bf3c6ba7266f79d4bc001980644da0d))
+* **api:** Add fetchAll method ([#207](https://github.com/712163/imapflow/issues/207)) ([bc09998](https://github.com/712163/imapflow/commit/bc09998270006ea6ff8430b3461619dd9b3e91c8))
+* **copy:** Updated cipyright year to 2024 ([e3f5040](https://github.com/712163/imapflow/commit/e3f5040e8f90523e12108e978ac5002f8caa9e1e))
+* **deps:** Bumped dependencies ([e8f5e8c](https://github.com/712163/imapflow/commit/e8f5e8ce431debddeecf523fa8739ae5ad23c659))
+* **deps:** Bumped deps ([53ccd8b](https://github.com/712163/imapflow/commit/53ccd8b1027782dcd2af6dd1f7d337007a7f79c0))
+* **deps:** Bumped deps ([559aa72](https://github.com/712163/imapflow/commit/559aa72337018f21a3675f4521ce4aae87e0aabb))
+* **deps:** Bumped Nodemailer version ([ee02764](https://github.com/712163/imapflow/commit/ee0276493494ecf08be557cc0c486fe309d359bf))
+* **docs:** Fixed mailbox property name in AppendResponseObject ([ca6d789](https://github.com/712163/imapflow/commit/ca6d789b761d3117f733ed7b026122098f4d9142))
+* **exchange:** handle special error response from exchange ([3ed4198](https://github.com/712163/imapflow/commit/3ed4198c1b5504ab0b46926fec179c682988b2e3))
+* **FETCH:** throw on failing FETCH ([12f9a45](https://github.com/712163/imapflow/commit/12f9a45530c6f3a2f35ba2968819011eea9c32b2))
+* **filename:** Fixed filename decoding for the download method ([68a8159](https://github.com/712163/imapflow/commit/68a8159a0988245bf3f7c9b002823b01d9d24876))
+* **flag-colors:** added a method to set Flag Color. The color is also included in the Fetch response structure ([d840951](https://github.com/712163/imapflow/commit/d8409513075b864e9131665af3f1670a0714d05c))
+* **idle:** Do not clear preCheck from other command ([cdf7643](https://github.com/712163/imapflow/commit/cdf7643952c975556e11a03ceca85f8a57fe1420))
+* **idle:** removed unneeded variable ([da59d9a](https://github.com/712163/imapflow/commit/da59d9a960dd0992b22335902808a315b1cb6ded))
+* **license:** Bumped license timeframe ([ce308b6](https://github.com/712163/imapflow/commit/ce308b66e5d30819c6bab7d75752528abc4b8436))
+* **license:** bumped license timeframe in README ([9a04730](https://github.com/712163/imapflow/commit/9a047309d10c0ef056c53fba3493df9f2fea5a1d))
+* **listTree:** pass listing options as an optional argument ([917ba80](https://github.com/712163/imapflow/commit/917ba80f21b2fe485154acd252d6565b838e73e6))
+* **locking:** log extra information about locks ([9790ec5](https://github.com/712163/imapflow/commit/9790ec575f405820d05dd4777987a88e0a4e819d))
+* **logout:** Fixed race condition for logout and TCP close. Fixes [#161](https://github.com/712163/imapflow/issues/161) ([39a7333](https://github.com/712163/imapflow/commit/39a7333a39499e4876abb29149f7c72f2f99a63d))
+* **logs:** Log mailbox lock description ([ce87cf5](https://github.com/712163/imapflow/commit/ce87cf5a256ddc324624893a1c17992475fafeb3))
+* micro-optimizations for parser ([3451ad2](https://github.com/712163/imapflow/commit/3451ad235532ca1a64a829f9f2f8e77bcef3a17d))
+* **MS365:** Wait until responding with a throttling response ([#142](https://github.com/712163/imapflow/issues/142)) ([09bfb3e](https://github.com/712163/imapflow/commit/09bfb3e1b90bdd37bc1c9b40e9284ad4afbd5c72))
+* **parser:** parse subfolders with square brackets ([0d0e8a6](https://github.com/712163/imapflow/commit/0d0e8a6ea379adf11594684d49a1ce5031339939))
+* **readme:** testing note format ([3038c4d](https://github.com/712163/imapflow/commit/3038c4d9740af0a5161bbc45dd13b86d4febc0ac))
+* **release:** Added package-lock ([e35bda8](https://github.com/712163/imapflow/commit/e35bda8a2b14503ba30a46b555df82ab1084cf5a))
+* **release:** updated package-lock ([b59220f](https://github.com/712163/imapflow/commit/b59220f54a58111e0b3259c502ff51b2a624f397))
+* **release:** updated provenance setting ([e178629](https://github.com/712163/imapflow/commit/e1786296569e5a0acfb997b007091925519c7d79))
+* **release:** updated provenance setting ([4fd5fa8](https://github.com/712163/imapflow/commit/4fd5fa8aa74756c1b9ff166febf294acda4792b8))
+* **socket:** Use destroy() instead of destroySoon() ([830c2d1](https://github.com/712163/imapflow/commit/830c2d18f3d27eb12dc6babe4edd37fed5f65490))
+* **special-use:** support custom special use flags for the Archive folder ([17aa6a8](https://github.com/712163/imapflow/commit/17aa6a8baf180a7349fe30f897184eb8e359a498))
+* **throttling:** automatically retry throttled FETCH commands a few times ([07a9aea](https://github.com/712163/imapflow/commit/07a9aea37ae55ed885ccc4c0e3732b367ad82cd3))
+
 ## [1.0.164](https://github.com/postalsys/imapflow/compare/v1.0.163...v1.0.164) (2024-07-09)
 
 
